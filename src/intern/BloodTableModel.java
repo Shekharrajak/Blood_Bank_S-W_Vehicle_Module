@@ -23,24 +23,22 @@ public class BloodTableModel extends AbstractTableModel{
 		this.blood_list = blood_list;
 	}
 	
-	@Override
 	public int getColumnCount() {
 		// TODO Auto-generated method stub
 		return columnNames.length;
 	}
 
-	@Override
 	public int getRowCount() {
 		// TODO Auto-generated method stub
 		return blood_list.size();
 	}
 	
-	@Override
+	
 	public String getColumnName(int col){
 		return columnNames[col];
 	}
 
-	@Override
+
 	public Object getValueAt(int row, int col) {
 		// TODO Auto-generated method stub
 		BloodInfo blood = blood_list.get(row);

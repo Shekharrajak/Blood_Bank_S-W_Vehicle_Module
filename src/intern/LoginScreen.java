@@ -47,6 +47,7 @@ public class LoginScreen extends JFrame {
   setVisible(true);
   setResizable(false);
   setBounds((screen.width - 500) / 2, (screen.height - 350) / 2, 450, 300);
+
   Init();
 
   Add();
@@ -61,12 +62,12 @@ public class LoginScreen extends JFrame {
  private void Init() {
 
   contentPane = new JPanel();
-  contentPane.setBackground(Color.WHITE);
+  contentPane.setBackground(Color.RED);
   contentPane.setForeground(Color.WHITE);
   contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
   setContentPane(contentPane);
   contentPane.setLayout(null);
-  contentPane.setSize(700, 1000);
+
   lblNewLabel_1 = new JLabel("Welcome to Login Screen");
   lblNewLabel_1.setFont(new Font("Microsoft YaHei UI", Font.BOLD, 11));
   lblNewLabel_1.setBounds(153, 0, 146, 49);
